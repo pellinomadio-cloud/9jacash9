@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-variant-numeric: normal;
+    font-feature-settings: "zero" 0;
+  }
+}
+
+/* Custom Gold and Dark Luxury Styling */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.25);
+}
+
+.gold-glow-subtle {
+  filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.3));
+}
+
+/* Hide scrollbar for clean app shell feel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
